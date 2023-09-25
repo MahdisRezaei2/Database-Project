@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<!--(c) Mahdis Rezaei Tamijani-->
+<!--Insert Data HTML file-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Insert Data Into a Database</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <form method="post" action="php/insertIntoValues.php">
+      <fieldset>
+        <legend>Enter the information of the people:</legend>
+
+        <label>Person ID </label><input type="number" name="personID" /> <br />
+        <label>First Name</label><input type="text" name="fname" /> <br />
+        <label>Last Name</label><input type="text" name="lname" /> <br />
+        <label>Phone Number </label><input type="number" name="pnumber" /> <br />
+        <label>Occupation</label><br />
+        <input name="OC" type="radio" value="Buyer" /> <label>Buyer</label>
+        <br />
+        <input name="OC" type="radio" value="Seller" /> <label>Seller</label>
+        <br />
+        <input name="OC" type="radio" value="Renter" /> <label>Renter</label>
+        <br />
+        <label>Apartment Number </label><input type="number" name="apnumber" /> <br />
+        <label>Street</label><input type="text" name="street" /> <br />
+        <br />
+        <label>City</label>
+        <select name="city">
+          <option>Vancouver</option>
+          <option>Toronto</option>
+          <option>Montreal</option>
+          
+        </select>
+        <label>Province</label>
+        <select name="province">
+          <option>BC</option>
+          <option>ON</option>
+          <option>QC</option>
+          
+        </select>
+       
+        <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    <br />
+    <a href="index.html">Back to the homepage</a>
+  </body>
+</html>

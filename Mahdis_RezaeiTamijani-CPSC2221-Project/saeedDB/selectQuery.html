@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<!--(c)Mahdis Rezaei Tamijani-->
+<!--Update a Record in a Table-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Update a Record in a Table</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <form method="post" action="php/selectAllQuery.php">
+      <fieldset>
+        <legend>Display All People</legend>
+        <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    <br />
+    <br />
+    <form method="post" action="php/selectLikeQuery.php">
+      <fieldset>
+        <legend>Display People whose name starts with</legend>
+        <label>Person Name Starts with</label>
+        <input type="text" name="fname" /> <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+
+    <br />
+    <br />
+    <form method="post" action="php/selectWhereQuery.php">
+      <fieldset>
+        <legend>Display People From a Specific City</legend>
+        <label>City Name</label> <input type="text" name="cy" /> <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    <a href='index.html'>Back to the Homepage</a>
+  </body>
+</html>
